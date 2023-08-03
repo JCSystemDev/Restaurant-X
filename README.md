@@ -24,6 +24,10 @@ CONTRASEÑA: user
 USUARIO: admin
 CONTRASEÑA: admin
 
+*El package consultas tiene las peticiones solicitadas a la base de datos en un archivo .sql
+
+*El package algoritmosypruebas tiene la estructura solicitada con clases, interfaces, main y pruebas
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Descripción del proyecto:

@@ -24,6 +24,7 @@ function createTableRow(pedido) {
 
 function cargarPedidos() {
     const tableBody = document.querySelector('#pedidosTable tbody');
+    const idSelect = document.querySelector('#id');
     fetch('http://localhost:8080/api/pedidos')
         .then(response => {
             if (!response.ok) {
@@ -35,6 +36,11 @@ function cargarPedidos() {
             data.forEach(pedido => {
                 const newRow = createTableRow(pedido);
                 tableBody.appendChild(newRow);
+
+                const option = document.createElement('option');
+                option.value = pedido.id;
+                option.textContent = pedido.id;
+                idSelect.appendChild(option);
             });
         })
         .catch(error => {
@@ -45,6 +51,14 @@ function cargarPedidos() {
 // Cargar los datos al cargar la página
 
 document.addEventListener("DOMContentLoaded", cargarPedidos);
+
+document.querySelector('#filterForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const selectedId = document.querySelector('#id').value;
+    if (selectedId) {
+        editarPedido(selectedId);
+    }
+});
 
 document.addEventListener("click", function(event) {
     if (event.target.classList.contains("btn-editar")) {

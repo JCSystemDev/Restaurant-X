@@ -12,27 +12,19 @@
 <body class="body-cont">
 <div class="container pt-3 text-white">
   <header>
-    <h1 class="titulo">Listado de Pedidos</h1>
+    <h1 class="titulo">Reporte de Pedidos</h1>
   </header>
   <main class="main-form">
     <form id="filterForm" class="mb-3">
       <div class="row g-3">
         <div class="col-auto">
-          <label for="mesa" class="form-label">Mesa:</label>
-          <select id="mesa" name="mesa" class="form-select">
+          <label for="id" class="form-label">ID:</label>
+          <select id="id" name="id" class="form-select">
           </select>
         </div>
+
         <div class="col-auto">
-          <label for="camarero" class="form-label">Camarero:</label>
-          <select id="camarero" name="camarero" class="form-select">
-          </select>
-        </div>
-        <div class="col-auto">
-          <label for="fecha" class="form-label">Fecha del pedido (Desde):</label>
-          <input type="date" id="fecha" name="fecha" class="form-control">
-        </div>
-        <div class="col-auto">
-          <button type="submit" class="btn btn-primary">Filtrar</button>
+          <button type="submit" class="btn btn-primary">Buscar</button>
         </div>
       </div>
     </form>
