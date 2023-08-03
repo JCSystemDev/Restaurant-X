@@ -1,7 +1,7 @@
 
 Nombre: Juan Carlos Gallardo Caballero
-Enlace al Repositorio de Github:
-https://github.com/JCSystemDev/Restaurant-X
+
+Enlace al Repositorio de Github: https://github.com/JCSystemDev/Restaurant-X
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
