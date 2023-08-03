@@ -7,12 +7,12 @@ Enlace al Repositorio de Github: https://github.com/JCSystemDev/Restaurant-X
 
 *** Consideraciones ***
 
-*La base de datos se está utilizando con el usuario: root y password:'' (vacío)
+* La base de datos se está utilizando con el usuario: root y password:'' (vacío)
 estos parámetros se deben cambiar desde el archivo application.properties que se ubica en la carpeta "resources"
 
-*Si la base de datos no está creada se debe crear con el archivo gestionrestaurant.sql que se ubica en esta misma carpeta
+* Si la base de datos no está creada se debe crear con el archivo gestionrestaurant.sql que se ubica en esta misma carpeta
 
-*La aplicación cuenta con Spring Security así que para iniciar sesión y ver la apliación se pueden usar 2 Usuarios:
+* La aplicación cuenta con Spring Security así que para iniciar sesión y ver la apliación se pueden usar 2 Usuarios:
 
 1. Usuario 
 
@@ -24,9 +24,9 @@ CONTRASEÑA: user
 USUARIO: admin
 CONTRASEÑA: admin
 
-*El package consultas tiene las peticiones solicitadas a la base de datos en un archivo .sql
+* El package consultas tiene las peticiones solicitadas a la base de datos en un archivo .sql
 
-*El package algoritmosypruebas tiene la estructura solicitada con clases, interfaces, main y pruebas
+* El package algoritmosypruebas tiene la estructura solicitada con clases, interfaces, main y pruebas
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
