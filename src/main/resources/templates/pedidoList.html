@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.com" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reporte de pedidos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="../static/css/styles.css">
+  <script src="https://kit.fontawesome.com/81a2ed02b0.js" crossorigin="anonymous"></script>
+</head>
+<body class="body-cont">
+<div class="container pt-3 text-white">
+  <header>
+    <h1 class="titulo">Listado de Pedidos</h1>
+  </header>
+  <main class="main-form">
+    <form id="filterForm" class="mb-3">
+      <div class="row g-3">
+        <div class="col-auto">
+          <label for="mesa" class="form-label">Mesa:</label>
+          <select id="mesa" name="mesa" class="form-select">
+          </select>
+        </div>
+        <div class="col-auto">
+          <label for="camarero" class="form-label">Camarero:</label>
+          <select id="camarero" name="camarero" class="form-select">
+          </select>
+        </div>
+        <div class="col-auto">
+          <label for="fecha" class="form-label">Fecha del pedido (Desde):</label>
+          <input type="date" id="fecha" name="fecha" class="form-control">
+        </div>
+        <div class="col-auto">
+          <button type="submit" class="btn btn-primary">Filtrar</button>
+        </div>
+      </div>
+    </form>
+    <table class="table" id="pedidosTable">
+      <thead class="table-dark">
+      <tr>
+        <th>ID</th>
+        <th>Camarero</th>
+        <th>Cliente</th>
+        <th>Fecha Orden</th>
+        <th>Total</th>
+      </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+    <div class="row col-auto">
+      <a href="/logout" class="btn btn-primary">Cerrar Sesión</a>
+    </div>
+  </main>
+  <script th:src="@{/js/pedidoList.js}"></script>
+</div>
+</body>
+</html>

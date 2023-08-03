@@ -1,13 +1,16 @@
 package cl.awakelab.spring7.model.domain.service;
 
 import cl.awakelab.spring7.model.domain.dto.PedidoDTO;
+import cl.awakelab.spring7.model.persistence.entity.Pedido;
 import cl.awakelab.spring7.model.persistence.mapper.PedidoMapper;
 import cl.awakelab.spring7.model.persistence.repository.PedidoRepository;
 import cl.awakelab.spring7.web.service.PedidoService;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Service
 public class PedidoServiceImpl implements PedidoService {
@@ -58,4 +61,6 @@ public class PedidoServiceImpl implements PedidoService {
         return false;
     }
 
-}
+
+    }
+
