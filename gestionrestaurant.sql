@@ -1,3 +1,7 @@
+CREATE DATABASE restaurantx;
+
+USE restaurantx;
+
 CREATE TABLE Mesa (
   ID INT PRIMARY KEY,
   Numero INT,
